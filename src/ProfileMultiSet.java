@@ -1,0 +1,2 @@
+public class ProfileMultiSet {
+}
