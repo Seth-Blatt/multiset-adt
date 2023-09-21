@@ -1,29 +1,28 @@
 public class TreeMultiSet implements MultiSet {
-    private Tree tree;
+    private final Tree tree;
 
     public TreeMultiSet() {
-        this.super()
-        this.tree = Tree();
+        this.tree = new Tree();
     }
 
-    public boolean add(java.lang.Object item) {
+    public boolean add(Object item) {
         this.tree.insert(item);
-        return True;
+        return true;
     }
 
-    public void remove(java.lang.Object item) {
-        this.tree.delete_item(item);
+    public void remove(Object item) {
+        this.tree.deleteItem(item);
     }
 
-    public boolean contains(java.lang.Object item) {
+    public boolean contains(Object item) {
         return this.tree.contains(item);
     }
 
-    public boolean is_empty(java.lang.Object item) {
-        return this.tree.is_empty();
+    public boolean isEmpty() {
+        return this.tree.isEmpty();
     }
 
-    public int count(java.lang.Object item) {
+    public int count(Object item) {
         return this.tree.count(item);
     }
 
