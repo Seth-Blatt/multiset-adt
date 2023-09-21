@@ -1,13 +1,14 @@
-public class TreeMultiSet {
+public class TreeMultiSet implements MultiSet {
     private Tree tree;
 
     public TreeMultiSet() {
+        this.super()
         this.tree = Tree();
     }
 
     public boolean add(java.lang.Object item) {
         this.tree.insert(item);
-        return True
+        return True;
     }
 
     public void remove(java.lang.Object item) {
